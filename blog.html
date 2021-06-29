@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+</head>
+<body>
+    
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="/__/firebase/8.6.8/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="/__/firebase/8.6.8/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="/__/firebase/8.6.8/firebase-auth.js"></script>
+    <script src="/__/firebase/8.6.8/firebase-firestore.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+    var firebaseConfig = {
+        apiKey: "AIzaSyCJ6qqEzSV2109tDRsvtG6pU5EkmBFWumQ",
+        authDomain: "surveillance-a621e.firebaseapp.com",
+        projectId: "surveillance-a621e",
+        storageBucket: "surveillance-a621e.appspot.com",
+        messagingSenderId: "454364864026",
+        appId: "1:454364864026:web:5a97d98484d4af2609fba3",
+        measurementId: "G-3KGGZ3GZQ8"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+    const db = firebase.firestore();
+    </script>
+     <!-- <script src="/__/firebase/init.js"></script> -->
+    <script src="database.js"></script>
+
+</body>
+</html>
